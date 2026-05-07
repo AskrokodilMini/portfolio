@@ -41,12 +41,35 @@
           </ul>
         </section>
     </nav>
-    <h1 class="text-center fs-1">The Librarian</h1>
+    <h1 class="text-center fs-1">My Library</h1>
   </header>
   <section class="row">
     <main class="ps-5 col-md-9 border-bottom">
       <div class="container">
         <div class="row">
+          <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <div class="form-group">
+          <label for="name">Naam:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Onderwerp:</label>
+          <input type="text" class="form-control" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Bericht:</label>
+          <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <div data-netlify-recaptcha="true"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Verzenden</button>
+      </form>
+      <p><br></p>
             <figure class="col-lg-3 col-md-6">
               <img src="assets/images/Foto.jpg" alt="Asman Ali" width="150" height="150">
             </figure>
@@ -59,7 +82,7 @@
     <aside class="col-md-3 border-bottom border-start ps-3">
       <h2 class="text-uppercase fw-bolder">Socials</h2>
       <p>Asman Ali<br>
-      <a href="mailto:asman.ali@student.ap.be">asman.ali@student.ap.be</a><br>+324 83 476 088</p>
+      <a href="mailto:asman.ali@student.ap.be">asmanally754@gmail.com</a><br>+324 83 476 088</p>
       <ul class="list-inline socials">
         <li class="list-inline-item"> 
           <a href="https://www.facebook.com/askrokodil.7" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
@@ -67,12 +90,15 @@
         <li class="list-inline-item">
           <a href="https://www.instagram.com/asman_ally/" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
         </li>
+        <li class="list-inline-item">
+          <a href="https://github.com/AskrokodilMini/" target="_blank"><i class="bi bi-github fs-3"></i></a>
+        </li>
       </ul>
     </aside>
   </section>
   <div class="row">
     <footer class="text-center">
-      <p>&copy; The Librarian</p>
+      <p>&copy; 2026 Asman Ali</p>
     </footer> 
   </div> 
 </body> 
