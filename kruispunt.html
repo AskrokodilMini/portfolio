@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kruispunt</title>
+  <!-- resetten van browsers -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+    </script>
+  <!-- eigen geschreven css -->
+  <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md container-fluid p-3">
+            <a class="navbar-brand " href="index.html"><img src="assets/images/TheLibrarian.png" alt="The Librarian" width="75" height="75"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"    aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <section class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav fs-3 fw-bolder text-end">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+        <h1 class="text-center">My Library</h1>
+    </header>
+  <section class="row">
+    <main class="ps-3 col-md-9 border-bottom">
+      <div class="row">
+        <h2 class="fs-3">Kruispunt met voorrang</h2>
+        <video class="col-lg-6 col-md-5" controls width="100%">
+          <source src="assets/20260227_144729_default.mp4" type="video/mp4">
+          <source src="assets/20260227_144729_default.ogg" type="video.ogg">
+        </video>
+        <p class="col-lg-6 col-md-7 fs-5">
+          Hier zie je een kleine demonstratie van een kruispunt met 2 verkeerslichten. Bij een van de verkeerslichten is er een sensor die bekijkt of er voertuigen aanwezig zijn om signaal te geven naar de lichten. Zo krijgen die auto's voorrang.
+        </p>
+    </div>
+    </main>
+    <aside class="col-md-3 border-bottom border-start ps-3">
+      <h2 class="text-uppercase fw-bolder">Socials</h2>
+      <p>Asman Ali<br>
+      <a href="mailto:asman.ali@student.ap.be">asmanally754@gmail.com</a><br>+324 83 476 088
+      </p>
+      <ul class="list-inline socials">
+        <li class="list-inline-item"> 
+          <a href="https://www.facebook.com/askrokodil.7" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/asman_ally/" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://github.com/AskrokodilMini/" target="_blank"><i class="bi bi-github fs-3"></i></a>
+        </li>
+      </ul>
+    </aside>
+  </section>
+  <div class="row">
+    <footer class="text-center">
+      <p>&copy; <span id="year"></span>Asman Ali</p>
+    </footer> 
+</body>

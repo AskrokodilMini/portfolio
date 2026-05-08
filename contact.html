@@ -18,6 +18,11 @@
     </script>
   <!-- eigen geschreven css -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript bestanden -->
+   <script src="assets/js/map-willebroek.js" defer></script>
+   <script src="/assets/js/script.js" defer></script>
+
 </head>
 <body>
   <header>
@@ -94,11 +99,14 @@
           <a href="https://github.com/AskrokodilMini/" target="_blank"><i class="bi bi-github fs-3"></i></a>
         </li>
       </ul>
+      <section id="map" class="row">
+          <div id="mapW" class="col-12 mb-3"></div>
+        </section>
     </aside>
   </section>
   <div class="row">
     <footer class="text-center">
-      <p>&copy; 2026 Asman Ali</p>
+      <p>&copy; <span id="year"></span> Asman Ali</p>
     </footer> 
   </div> 
 </body> 
