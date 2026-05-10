@@ -11,6 +11,8 @@ html, body,section {
 .nav-link{
     color: rgb(255, 255, 255);
 }
+.map{ height: 250px;}
+
 
 @media (min-width: 576px) {}
 

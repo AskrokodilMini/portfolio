@@ -1,17 +1,11 @@
 //Script om kaart in map te steken met id mapWillebroek. Coordinaten zijn a en b
-let map = L.map('mapW').setView([51.23009, 4.41616], 16);
+var map = L.map('map').setView([51.061704, 4.361374], 16);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    maxZoom:19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// bepaal de rechthoek rondom het gebouw van AP
-let bounds = [[51.23041, 4.4155], [51.22991, 4.41675]];
-
-// kleur de rechthoek in met de rode AP-kleur
-L.rectangle(bounds, { color: "#e60005", weight: 1 }).addTo(map);
-
-// plaats een marker met als tekst "AP-Hogeschool" en eronder "Ellermanstraat 33"
-let apMarker = L.marker([51.23009, 4.41616]).addTo(map);
-apMarker.bindPopup("<b>AP-Hogeschool</b><br>Ellermanstraat 33").openPopup();
+L.marker([51.061704, 4.361374]).addTo(map)
+    .bindPopup('Hoofdkantoor Willebroek')
+    .openPopup();
